@@ -39,3 +39,14 @@ Wristband wearables alone cannot distinguish acute cognitive stress from heavy m
 ### Prerequisites
 ```bash
 pip install -r requirements.txt
+### Dataset Setup
+1. Download the public WESAD dataset from [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/465/wesad+wearable+stress+and+affect+detection).
+2. Extract and place the dataset in the working directory as: `WESAD/S2/S2.pkl`.
+
+### Execution
+* Run Phase 1 (Baseline Lab Model):
+  ```bash
+  python 01_wesad_baseline.py
+* Run Phase 2 (Construction-Adapted Ablation):
+  ```bash
+  python 02_wesad_construction_adapted.py
